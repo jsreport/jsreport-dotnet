@@ -1,0 +1,29 @@
+﻿@model WebApp.Model.InvoiceModel
+    <style>
+        .heading > td {
+            background-color: green;
+            color: white;          
+        }        
+    </style>
+    <table>     
+        <tr class="heading ">
+            <td>
+                Item
+            </td>
+            <td>
+                Price
+            </td>
+        </tr>
+
+        @foreach (var item in Model.Items)
+        {
+            <tr class="item">
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.Price
+                </td>
+            </tr>
+        }        
+    </table>

@@ -1,0 +1,72 @@
+﻿@model WebApp.Model.InvoiceModel
+
+<html>
+<head>
+    <link href="~/css/invoice.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div class="invoice-box">
+        <table cellpadding="0" cellspacing="0">
+            <tr class="top">
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td class="title">
+                                <img src="~/img/logo.png" style="width:100%; max-width:300px;" />
+                            </td>
+                            <td>
+                                Invoice #: @Model.Number
+                                <br> Created: @DateTime.Now.ToShortDateString()
+                                <br> Due: @DateTime.Now.AddDays(20).ToShortDateString()
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="information ">
+                <td colspan="2 ">
+                    <table>
+                        <tr>
+                            <td>@Model.Seller.Name<br>
+                                @Model.Seller.Road<br>
+                                @Model.Seller.Country
+                            </td>
+                           <td>@Model.Buyer.Name<br>
+                               @Model.Buyer.Road<br>
+                               @Model.Buyer.Country
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="heading ">
+                <td>
+                    Item
+                </td>
+                <td>
+                    Price
+                </td>
+            </tr>
+
+            @foreach (var item in Model.Items)
+            {
+                <tr class="item">
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        $ @item.Price
+                    </td>
+                </tr>
+            }
+
+            <tr class="total ">
+                <td></td>
+                <td>
+                    Total: @Model.Items.Sum(i => i.Price)
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
