@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26621.2
+VisualStudioVersion = 15.0.26711.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jsreport.Client", "..\jsreport-dotnet-client\jsreport.Client\jsreport.Client.csproj", "{58E6E868-46FB-472B-9040-B004FDEEE556}"
 EndProject
@@ -34,6 +34,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jsreport.Client.Test", "..\jsreport-dotnet-client\jsreport.Client.Test\jsreport.Client.Test.csproj", "{0DF3BA84-8922-47B1-8218-0356EDE9DC10}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jsreport.MVC.Test", "..\jsreport-dotnet-mvc\jsreport.MVC.Test\jsreport.MVC.Test.csproj", "{78FB2E9D-A7F7-48EC-99F3-D3DEBB04180A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{91699C38-00A5-45A3-8A44-1F60FAA5B070}"
+	ProjectSection(SolutionItems) = preProject
+		clone-all.bat = clone-all.bat
+		pull-all.bat = pull-all.bat
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
