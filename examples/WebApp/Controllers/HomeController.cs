@@ -71,7 +71,7 @@ namespace WebApp.Controllers
         public IActionResult InvoiceDebugLogs()
         {
             HttpContext.JsReportFeature()
-                .Debug()
+                .DebugLogsToResponse()
                 .Recipe(Recipe.PhantomPdf);
 
             return View("Invoice", InvoiceModel.Example());
