@@ -33,7 +33,7 @@ The Visual Studio extension which adds two convenient buttons `Add jsreport into
 4. Stabilize interfaces and API
 5. Final release should come in Q3 together with the .net core 2.0
 
-##License
+## License
 MIT
 
 
