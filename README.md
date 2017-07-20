@@ -1,6 +1,6 @@
-# jsreport for .net
+# jsreport sdk for .net
 
-> **Warning!** This is pre alfa version of future c# sdks for jsreport.
+> **Warning!** This is pre alfa version of future c# sdks for jsreport. So far you may only try fiddling with it using the steps below so far. 
 
 ## The first fiddling
 1. install [preview version of VS 2017](https://www.visualstudio.com/vs/preview/) - don't worry you can easily run your current VS with the preview side by side
@@ -9,20 +9,25 @@
 4. open `jsreport.development.sln`
 5. run the startup project `WebApp` or `ConsoleApp` to see the basics
 
-## What's included
+
+**Pdf rendering, Excel rendering and other reporting features right in the .net core**
+jsreport sdk for .net includes c# based rest client to the [jsreport](https://jsreport.net) reporting server as well as assemblies running local jsreport right from the .net project. Please find the guides, documentation and get started examples on the 
+
+## sdk packages
 The jsreport sdk for .net consists of several repositories / nuget packages were each has its specific purpose.
 
-### [jsreport.client](https://github.com/jsreport/jsreport-dotnet-client)
-The c# client for already running jsreport as http server. This is the most downloaded package which you use to connect to your jsreport instance or jsreportonline and invoke remote rendering using this simple http client wrapper.
+|   |   |   |  |
+|---|---|---|  |
+|[jsreport.client](https://github.com/jsreport/jsreport-dotnet-client) | build | nuget |
+|[jsreport.local](https://github.com/jsreport/jsreport-dotnet-local) | build | nuget |
+|[jsreport.mvc](https://github.com/jsreport/jsreport-dotnet-mvc) | build | nuget |
+|[jsreport.types](https://github.com/jsreport/jsreport-dotnet-types) | build | nuget |
+|[jsreport.shared](https://github.com/jsreport/jsreport-dotnet-shared) | build | nuget |
+|[jsreport.binary](https://github.com/jsreport/jsreport-dotnet-binary) | build | nuget |
+|[jsreport.vstools](https://github.com/jsreport/jsreport-dotnet-vstools) | build | nuget |
 
-### [jsreport.local](https://github.com/jsreport/jsreport-dotnet-local)
-The nuget attaches the `jsreport.exe` binary into the c# project and provide its API using simple c# wrapper having the same interface as `jsreport.client` but running locally along with the .net process.
-
-### [jsreport.mvc](https://github.com/jsreport/jsreport-dotnet-mvc)
-This package includes several helpers for using jsreport inside an asp.net core projects.
-
-### [jsreport.vstools](https://github.com/jsreport/jsreport-dotnet-vstools)
-The Visual Studio extension which adds two convenient buttons `Add jsreport into project` and `Run jsreport development studio` which you can use from the project context menu.
+## Development
+The individual parts of sdk are separated in its own packages and repositories. If you plan to change just single repository at a time, you should clone it and use the VS solution in particular repository. In case you plan to modify multiple packages at once, the easiest is to clone this repository. Run `clone-all.bat` to get all the repositories. And finally use `jsreport-development.sln` to startup whole sdk at once.
 
 
 ## Roadmap
@@ -33,7 +38,8 @@ The Visual Studio extension which adds two convenient buttons `Add jsreport into
 4. Stabilize interfaces and API
 5. Final release should come in Q3 together with the .net core 2.0
 
+## Contributions
+Yes please. We are looking forward every contribution! Just make sure you add test and the CI passes. Then we will gladly accept your PRs.
+
 ## License
 MIT
-
-
