@@ -14,7 +14,7 @@ namespace ConsoleApp
         static void Main(string[] args)
         {         
             Console.WriteLine("Initializing local jsreport.exe utility");
-            var rs = new LocalReporting().KillRunningJsReportProcesses().UseBinary(JsReportBinary.GetStream()).AsUtility().Create();
+            var rs = new LocalReporting().KillRunningJsReportProcesses().UseBinary(JsReportBinary.GetBinary()).AsUtility().Create();
 
             Console.WriteLine("Rendering localy stored template jsreport/data/templates/Invoice into invoice.pdf");
             var invoiceReport = rs.RenderByNameAsync("Invoice", InvoiceData).Result;

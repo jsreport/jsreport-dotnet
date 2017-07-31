@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26711.1
+VisualStudioVersion = 15.0.26724.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jsreport.Client", "..\jsreport-dotnet-client\jsreport.Client\jsreport.Client.csproj", "{58E6E868-46FB-472B-9040-B004FDEEE556}"
 EndProject
@@ -40,6 +40,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{91699C38
 		clone-all.bat = clone-all.bat
 		pull-all.bat = pull-all.bat
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jsreport.Binary.Linux", "..\jsreport-dotnet-binary-linux\jsreport.Binary.Linux\jsreport.Binary.Linux.csproj", "{54E089B6-CD73-40B5-B5AF-5A9F46B29605}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jsreport.Binary.Linux.Test", "..\jsreport-dotnet-binary-linux\jsreport.Binary.Linux.Test\jsreport.Binary.Linux.Test.csproj", "{3ACE78F6-C733-4D60-AAA6-0E570FAED7E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -103,6 +107,14 @@ Global
 		{78FB2E9D-A7F7-48EC-99F3-D3DEBB04180A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78FB2E9D-A7F7-48EC-99F3-D3DEBB04180A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78FB2E9D-A7F7-48EC-99F3-D3DEBB04180A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54E089B6-CD73-40B5-B5AF-5A9F46B29605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54E089B6-CD73-40B5-B5AF-5A9F46B29605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54E089B6-CD73-40B5-B5AF-5A9F46B29605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54E089B6-CD73-40B5-B5AF-5A9F46B29605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ACE78F6-C733-4D60-AAA6-0E570FAED7E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ACE78F6-C733-4D60-AAA6-0E570FAED7E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ACE78F6-C733-4D60-AAA6-0E570FAED7E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ACE78F6-C733-4D60-AAA6-0E570FAED7E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -115,6 +127,7 @@ Global
 		{DCDA8DF5-6FFC-4957-927A-2CD7D333E1DC} = {84FAD803-2695-484B-B1EA-BC2301E2A9CC}
 		{0DF3BA84-8922-47B1-8218-0356EDE9DC10} = {84FAD803-2695-484B-B1EA-BC2301E2A9CC}
 		{78FB2E9D-A7F7-48EC-99F3-D3DEBB04180A} = {84FAD803-2695-484B-B1EA-BC2301E2A9CC}
+		{3ACE78F6-C733-4D60-AAA6-0E570FAED7E1} = {84FAD803-2695-484B-B1EA-BC2301E2A9CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {50D067BC-05D8-4962-8943-D4BACCD3D516}
