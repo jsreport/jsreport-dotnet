@@ -38,12 +38,13 @@ namespace WebApp.Controllers
         }
 
         [MiddlewareFilter(typeof(JsReportPipeline))]
-        public IActionResult InvoiceWithHeader()
+        public async Task<IActionResult> InvoiceWithHeader()
         {
+            var header = await JsReportMVCService.RenderViewToStringAsync(HttpContext, RouteData, "Header", new { });
+
             HttpContext.JsReportFeature()
                 .Recipe(Recipe.PhantomPdf)
-                .Configure(async (r) => r.Template.Phantom.Header = 
-                    await JsReportMVCService.RenderViewToStringAsync(HttpContext, RouteData, "Header", new { }));
+                .Configure((r) => r.Template.Phantom.Header = header);
 
             return View("Invoice", InvoiceModel.Example());
         }

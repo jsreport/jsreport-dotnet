@@ -18,12 +18,15 @@
   <Choose>
     <When Condition=" '$(SolutionName)' == 'jsreport.development' ">
       <ItemGroup>        
-        <ProjectReference Include="..\..\..\jsreport-dotnet-local\jsreport.Local\jsreport.Local.csproj" />        
+        <ProjectReference Include="..\..\..\jsreport-dotnet-local\jsreport.Local\jsreport.Local.csproj" />
+        <ProjectReference Include="..\..\..\jsreport-dotnet-binary\jsreport.Binary\jsreport.Binary.csproj" />
+        <ProjectReference Include="..\..\..\jsreport-dotnet-client\jsreport.Client\jsreport.Client.csproj" />        
       </ItemGroup>
     </When>
     <Otherwise>
       <ItemGroup>
-        <PackageReference Include="jsreport.Local" Version="1.0.0" />        
+        <PackageReference Include="jsreport.Local" Version="1.0.0" />
+        <PackageReference Include="jsreport.Binary" Version="1.0.0" />
       </ItemGroup>
     </Otherwise>
   </Choose>

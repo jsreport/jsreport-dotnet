@@ -1,16 +1,20 @@
-﻿using jsreport.Local;
+﻿using jsreport.Binary;
+using jsreport.Client;
+using jsreport.Local;
 using jsreport.Types;
 using System;
+using System.Diagnostics;
 using System.IO;
+using System.Linq;
 
 namespace ConsoleApp
 {
     class Program
     {
         static void Main(string[] args)
-        {
+        {         
             Console.WriteLine("Initializing local jsreport.exe utility");
-            var rs = new LocalReporting().AsUtility().Create();
+            var rs = new LocalReporting().KillRunningJsReportProcesses().UseBinary(JsReportBinary.GetStream()).AsUtility().Create();
 
             Console.WriteLine("Rendering localy stored template jsreport/data/templates/Invoice into invoice.pdf");
             var invoiceReport = rs.RenderByNameAsync("Invoice", InvoiceData).Result;
@@ -19,7 +23,7 @@ namespace ConsoleApp
             Console.WriteLine("Rendering custom report fully described through the request object into customReport.pdf");
             var customReport = rs.RenderAsync(CustomRenderRequest).Result;
             customReport.Content.CopyTo(File.OpenWrite("customReport.pdf"));
-        }
+        }   
 
         private static RenderRequest CustomRenderRequest = new RenderRequest()
         {

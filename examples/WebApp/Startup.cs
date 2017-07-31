@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using jsreport.MVC;
 using jsreport.Local;
+using jsreport.Binary;
 
 namespace WebApp
 {
@@ -12,7 +13,7 @@ namespace WebApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();              
-            services.AddJsReport(new LocalReporting().AsUtility().Create());
+            services.AddJsReport(new LocalReporting().UseBinary(JsReportBinary.GetStream()).AsUtility().Create());
         }
         
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
@@ -31,5 +32,13 @@ namespace WebApp
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
         }    
+    }
+}
+
+public class ReportingStartup
+{
+    public string RunJsReportServer()
+    {
+        return "hello";
     }
 }
