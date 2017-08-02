@@ -19,5 +19,11 @@ git pull
 cd ../jsreport-dotnet-vstools
 git pull
 
+cd ../jsreport-dotnet-example-consoleapp
+git pull
+
+cd ../jsreport-dotnet-example-webapp
+git pull
+
 cd ../jsreport-dotnet
 git pull

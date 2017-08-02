@@ -1,8 +1,0 @@
-﻿{
-  "connectionString": {
-    "name": "fs"
-  },
-  
-  "httpPort": 5488, 
-  "sample-template": { "createSamples": true } 
-}
