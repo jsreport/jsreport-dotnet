@@ -7,7 +7,7 @@ git pull
 cd ../jsreport-dotnet-local
 git pull
 
-cd ../jsreport-dotnet-mvc
+cd ../jsreport-dotnet-aspnetcore
 git pull
 
 cd ../jsreport-dotnet-shared

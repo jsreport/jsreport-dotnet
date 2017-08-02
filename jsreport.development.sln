@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jsreport.Local", "..\jsrepo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jsreport.Binary", "..\jsreport-dotnet-binary\jsreport.Binary\jsreport.Binary.csproj", "{3CE3691E-7365-4B44-A088-D03AA0429E10}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jsreport.MVC", "..\jsreport-dotnet-mvc\jsreport.MVC\jsreport.MVC.csproj", "{400B9F71-57A3-42D5-8298-43D0FCAB8587}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jsreport.Types", "..\jsreport-dotnet-types\jsreport.Types\jsreport.Types.csproj", "{3FA48086-F641-45FD-B005-E48FF50A1194}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jsreport.Shared", "..\jsreport-dotnet-shared\jsreport.Shared\jsreport.Shared.csproj", "{F122C64B-0A7C-42AC-8466-36E0A8853BCB}"
@@ -29,8 +27,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jsreport.Shared.Test", "..\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jsreport.Client.Test", "..\jsreport-dotnet-client\jsreport.Client.Test\jsreport.Client.Test.csproj", "{0DF3BA84-8922-47B1-8218-0356EDE9DC10}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jsreport.MVC.Test", "..\jsreport-dotnet-mvc\jsreport.MVC.Test\jsreport.MVC.Test.csproj", "{78FB2E9D-A7F7-48EC-99F3-D3DEBB04180A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{91699C38-00A5-45A3-8A44-1F60FAA5B070}"
 	ProjectSection(SolutionItems) = preProject
 		clone-all.bat = clone-all.bat
@@ -44,6 +40,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "..\jsreport-dotnet-example-consoleapp\ConsoleApp.csproj", "{8FA98FC2-EFE2-49E9-B3CB-BDF89CD4F9EF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "..\jsreport-dotnet-example-webapp\WebApp.csproj", "{FEEB5E2E-2207-4F0B-8454-1D144E12DB7F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jsreport.AspNetCore", "..\jsreport-dotnet-aspnetcore\jsreport.AspNetCore\jsreport.AspNetCore.csproj", "{D5E143CB-93FF-4013-9F6E-D7CC1F069CFF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jsreport.AspNetCore.Test", "..\jsreport-dotnet-aspnetcore\jsreport.AspNetCore.Test\jsreport.AspNetCore.Test.csproj", "{7E040709-862E-4455-93A4-0F0DCE75D1D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,10 +63,6 @@ Global
 		{3CE3691E-7365-4B44-A088-D03AA0429E10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CE3691E-7365-4B44-A088-D03AA0429E10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CE3691E-7365-4B44-A088-D03AA0429E10}.Release|Any CPU.Build.0 = Release|Any CPU
-		{400B9F71-57A3-42D5-8298-43D0FCAB8587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{400B9F71-57A3-42D5-8298-43D0FCAB8587}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{400B9F71-57A3-42D5-8298-43D0FCAB8587}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{400B9F71-57A3-42D5-8298-43D0FCAB8587}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3FA48086-F641-45FD-B005-E48FF50A1194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3FA48086-F641-45FD-B005-E48FF50A1194}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FA48086-F641-45FD-B005-E48FF50A1194}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -95,10 +91,6 @@ Global
 		{0DF3BA84-8922-47B1-8218-0356EDE9DC10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DF3BA84-8922-47B1-8218-0356EDE9DC10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DF3BA84-8922-47B1-8218-0356EDE9DC10}.Release|Any CPU.Build.0 = Release|Any CPU
-		{78FB2E9D-A7F7-48EC-99F3-D3DEBB04180A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{78FB2E9D-A7F7-48EC-99F3-D3DEBB04180A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{78FB2E9D-A7F7-48EC-99F3-D3DEBB04180A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{78FB2E9D-A7F7-48EC-99F3-D3DEBB04180A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{54E089B6-CD73-40B5-B5AF-5A9F46B29605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{54E089B6-CD73-40B5-B5AF-5A9F46B29605}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54E089B6-CD73-40B5-B5AF-5A9F46B29605}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -115,6 +107,14 @@ Global
 		{FEEB5E2E-2207-4F0B-8454-1D144E12DB7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEEB5E2E-2207-4F0B-8454-1D144E12DB7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEEB5E2E-2207-4F0B-8454-1D144E12DB7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5E143CB-93FF-4013-9F6E-D7CC1F069CFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5E143CB-93FF-4013-9F6E-D7CC1F069CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5E143CB-93FF-4013-9F6E-D7CC1F069CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5E143CB-93FF-4013-9F6E-D7CC1F069CFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E040709-862E-4455-93A4-0F0DCE75D1D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E040709-862E-4455-93A4-0F0DCE75D1D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E040709-862E-4455-93A4-0F0DCE75D1D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E040709-862E-4455-93A4-0F0DCE75D1D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -124,10 +124,10 @@ Global
 		{C0F5F1EE-48D8-42B4-A95A-889633818841} = {84FAD803-2695-484B-B1EA-BC2301E2A9CC}
 		{DCDA8DF5-6FFC-4957-927A-2CD7D333E1DC} = {84FAD803-2695-484B-B1EA-BC2301E2A9CC}
 		{0DF3BA84-8922-47B1-8218-0356EDE9DC10} = {84FAD803-2695-484B-B1EA-BC2301E2A9CC}
-		{78FB2E9D-A7F7-48EC-99F3-D3DEBB04180A} = {84FAD803-2695-484B-B1EA-BC2301E2A9CC}
 		{3ACE78F6-C733-4D60-AAA6-0E570FAED7E1} = {84FAD803-2695-484B-B1EA-BC2301E2A9CC}
 		{8FA98FC2-EFE2-49E9-B3CB-BDF89CD4F9EF} = {CC637E01-8253-4FFE-8BE7-20999AC2656C}
 		{FEEB5E2E-2207-4F0B-8454-1D144E12DB7F} = {CC637E01-8253-4FFE-8BE7-20999AC2656C}
+		{7E040709-862E-4455-93A4-0F0DCE75D1D9} = {84FAD803-2695-484B-B1EA-BC2301E2A9CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {50D067BC-05D8-4962-8943-D4BACCD3D516}
