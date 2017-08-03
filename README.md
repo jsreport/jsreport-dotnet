@@ -1,45 +1,38 @@
-# jsreport sdk for .net
+# jsreport sdk for .NET
 
-> **Warning!** This is pre alfa version of future c# sdks for jsreport. So far you may only try fiddling with it using the steps below so far. 
+**Pdf rendering, Excel rendering and other reporting features right in the .NET core using [jsreport](https://jsreport.net).**
 
-## The first fiddling
-1. install [preview version of VS 2017](https://www.visualstudio.com/vs/preview/) - don't worry you can easily run your current VS with the preview side by side
-2. clone this repository
-3. run `clone-all.bat`
-4. open `jsreport.development.sln`
-5. run the startup project `WebApp` or `ConsoleApp` to see the basics
+jsreport sdk for .net includes c# based rest client to the  reporting server as well as assemblies running local jsreport right from the .NET project. Please find the guides, documentation and get started examples in **[jsreport sdk documentation](https://jsreport.net/learn/dotnet-v2)**.
 
-
-**Pdf rendering, Excel rendering and other reporting features right in the .net core**
-jsreport sdk for .net includes c# based rest client to the [jsreport](https://jsreport.net) reporting server as well as assemblies running local jsreport right from the .net project. Please find the guides, documentation and get started examples on the 
-
-## sdk packages
-The jsreport sdk for .net consists of several repositories / nuget packages were each has its specific purpose.
+## Repositories
+The jsreport sdk for .NET consists of several repositories and nuget packages were each has its specific location and purpose.
 
 |   |   |   |  |
-|---|---|---|  |
-|[jsreport.client](https://github.com/jsreport/jsreport-dotnet-client) | build | nuget |
-|[jsreport.local](https://github.com/jsreport/jsreport-dotnet-local) | build | nuget |
-|[jsreport.mvc](https://github.com/jsreport/jsreport-dotnet-mvc) | build | nuget |
-|[jsreport.types](https://github.com/jsreport/jsreport-dotnet-types) | build | nuget |
-|[jsreport.shared](https://github.com/jsreport/jsreport-dotnet-shared) | build | nuget |
-|[jsreport.binary](https://github.com/jsreport/jsreport-dotnet-binary) | build | nuget |
-|[jsreport.vstools](https://github.com/jsreport/jsreport-dotnet-vstools) | build | nuget |
-
-## Development
-The individual parts of sdk are separated in its own packages and repositories. If you plan to change just single repository at a time, you should clone it and use the VS solution in particular repository. In case you plan to modify multiple packages at once, the easiest is to clone this repository. Run `clone-all.bat` to get all the repositories. And finally use `jsreport-development.sln` to startup whole sdk at once.
-
+|---|---|---|--|
+|[jsreport.Client](https://github.com/jsreport/jsreport-dotnet-client) | [![Build status](https://ci.appveyor.com/api/projects/status/81t7e9mcyvb1bfb5?svg=true)](https://ci.appveyor.com/project/pofider/jsreport-dotnet-client) | [![NuGet](https://img.shields.io/nuget/vpre/jsreport.Client.svg)](https://nuget.org/packages/jsreport.Client) |
+|[jsreport.Local](https://github.com/jsreport/jsreport-dotnet-local) | [![Build status](https://ci.appveyor.com/api/projects/status/10hxkffrxlywr3k1?svg=true)](https://ci.appveyor.com/project/pofider/jsreport-dotnet-local) | [![NuGet](https://img.shields.io/nuget/vpre/jsreport.Local.svg)](https://nuget.org/packages/jsreport.Local) |
+|[jsreport.AspNetCore](https://github.com/jsreport/jsreport-dotnet-aspnetcore) | [![Build status](https://ci.appveyor.com/api/projects/status/4vyvsocrvn3en7os?svg=true)](https://ci.appveyor.com/project/pofider/jsreport-dotnet-aspnetcore) | [![NuGet](https://img.shields.io/nuget/v/jsreport.AspNetCore.svg)](https://nuget.org/packages/jsreport.AspNetCore) |
+|[jsreport.Types](https://github.com/jsreport/jsreport-dotnet-types) | [![Build status](https://ci.appveyor.com/api/projects/status/sx90dahobt3dhr2f?svg=true)](https://ci.appveyor.com/project/pofider/jsreport-dotnet-types) | [![NuGet](https://img.shields.io/nuget/v/jsreport.Types.svg)](https://nuget.org/packages/jsreport.Types) |
+|[jsreport.Shared](https://github.com/jsreport/jsreport-dotnet-shared) | [![Build status](https://ci.appveyor.com/api/projects/status/nl2evif6uho2y7ha?svg=true)](https://ci.appveyor.com/project/pofider/jsreport-dotnet-shared) | [![NuGet](https://img.shields.io/nuget/v/jsreport.Shared.svg)](https://nuget.org/packages/jsreport.Shared) |
+|[jsreport.Binary](https://github.com/jsreport/jsreport-dotnet-binary) | [![Build status](https://ci.appveyor.com/api/projects/status/o2xkoca4gtloxayx?svg=true)](https://ci.appveyor.com/project/pofider/jsreport-dotnet-binary) | [![NuGet](https://img.shields.io/nuget/v/jsreport.Binary.svg)](https://nuget.org/packages/jsreport.Binary) |
 
 ## Roadmap
 
-1. Add documentation
-2. Release preview nugets
-3. Add linux support
-4. Stabilize interfaces and API
-5. Final release should come in Q3 together with the .net core 2.0
+1. Create demo screen cast
+2. Release linux binary package
+3. Final release should come in Q3 together with the .net core 2.0
 
-## Contributions
-Yes please. We are looking forward every contribution! Just make sure you add test and the CI passes. Then we will gladly accept your PRs.
+## Development and contributions
+
+**We are looking forward every contribution!**  
+You can follow these steps to startup your local environment:
+
+1. install [preview version of VS 2017](https://www.visualstudio.com/vs/preview/) 
+2. clone this repository
+3. run `clone-all.bat`
+4. open `jsreport.development.sln`
+
+You can of course also open each individual repository separately, but this approach is probably the most convenient.
 
 ## License
 MIT
