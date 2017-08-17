@@ -2,7 +2,7 @@
 
 **Pdf rendering, Excel rendering and other reporting features right in the .NET core using [jsreport](https://jsreport.net).**
 
-jsreport sdk for .net includes c# based rest client to the  reporting server as well as assemblies running local jsreport right from the .NET project. Please find the guides, documentation and get started examples in **[jsreport sdk documentation](https://jsreport.net/learn/dotnet-v2)**.
+jsreport sdk for .net includes c# based rest client to the  reporting server as well as assemblies running local jsreport right from the .NET project. Please find the guides, documentation and get started examples in **[jsreport sdk documentation](https://jsreport.net/learn/dotnet)**.
 
 ## Examples
 
