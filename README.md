@@ -4,6 +4,14 @@
 
 jsreport sdk for .net includes c# based rest client to the  reporting server as well as assemblies running local jsreport right from the .NET project. Please find the guides, documentation and get started examples in **[jsreport sdk documentation](https://jsreport.net/learn/dotnet-v2)**.
 
+## Examples
+
+|   |   |   |
+|---|---|---|
+|[Console](https://github.com/jsreport/jsreport-dotnet-example-consoleapp) | Example of integrating local jsreport into .net core console application |
+|[Web](https://github.com/jsreport/jsreport-dotnet-example-webapp) | Example of integrating local jsreport into asp.net core mvc appliation |
+
+
 ## Repositories
 The jsreport sdk for .NET consists of several repositories and nuget packages were each has its specific location and purpose.
 
@@ -16,23 +24,22 @@ The jsreport sdk for .NET consists of several repositories and nuget packages we
 |[jsreport.Shared](https://github.com/jsreport/jsreport-dotnet-shared) | [![Build status](https://ci.appveyor.com/api/projects/status/nl2evif6uho2y7ha?svg=true)](https://ci.appveyor.com/project/pofider/jsreport-dotnet-shared) | [![NuGet](https://img.shields.io/nuget/v/jsreport.Shared.svg)](https://nuget.org/packages/jsreport.Shared) |
 |[jsreport.Binary](https://github.com/jsreport/jsreport-dotnet-binary) | [![Build status](https://ci.appveyor.com/api/projects/status/o2xkoca4gtloxayx?svg=true)](https://ci.appveyor.com/project/pofider/jsreport-dotnet-binary) | [![NuGet](https://img.shields.io/nuget/v/jsreport.Binary.svg)](https://nuget.org/packages/jsreport.Binary) |
 
-## Roadmap
-
-1. Create demo screen cast
-2. Release linux binary package
-3. Final release should come in Q3 together with the .net core 2.0
-
 ## Development and contributions
 
 **We are looking forward every contribution!**  
 You can follow these steps to startup your local environment:
 
-1. install [preview version of VS 2017](https://www.visualstudio.com/vs/preview/) 
+1. install [VS 2017.3](https://www.visualstudio.com/) 
 2. clone this repository
 3. run `clone-all.bat`
 4. open `jsreport.development.sln`
 
 You can of course also open each individual repository separately, but this approach is probably the most convenient.
+
+## Roadmap
+
+1. Create demo screen cast
+2. Release linux and osx binary package
 
 ## License
 MIT
