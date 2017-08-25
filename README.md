@@ -8,8 +8,9 @@ jsreport sdk for .net includes c# based rest client to the  reporting server as 
 
 |   |   |   |
 |---|---|---|
-|[Console](https://github.com/jsreport/jsreport-dotnet-example-consoleapp) | Example of integrating local jsreport into .net core console application |
-|[Web](https://github.com/jsreport/jsreport-dotnet-example-webapp) | Example of integrating local jsreport into asp.net core mvc appliation |
+|[Console .net core](https://github.com/jsreport/jsreport-dotnet-example-consoleapp) | Example of integrating local jsreport into .net core console application |
+|[Web asp.net core](https://github.com/jsreport/jsreport-dotnet-example-webapp) | Example of integrating local jsreport into asp.net core mvc appliation |
+|[Web asp.net full](https://github.com/jsreport/jsreport-dotnet-example-webapp) | Example of integrating local jsreport into asp.net mvc application in full .net framework |
 
 
 ## Repositories
@@ -23,6 +24,7 @@ The jsreport sdk for .NET consists of several repositories and nuget packages we
 |[jsreport.Types](https://github.com/jsreport/jsreport-dotnet-types) | [![Build status](https://ci.appveyor.com/api/projects/status/sx90dahobt3dhr2f?svg=true)](https://ci.appveyor.com/project/pofider/jsreport-dotnet-types) | [![NuGet](https://img.shields.io/nuget/v/jsreport.Types.svg)](https://nuget.org/packages/jsreport.Types) |
 |[jsreport.Shared](https://github.com/jsreport/jsreport-dotnet-shared) | [![Build status](https://ci.appveyor.com/api/projects/status/nl2evif6uho2y7ha?svg=true)](https://ci.appveyor.com/project/pofider/jsreport-dotnet-shared) | [![NuGet](https://img.shields.io/nuget/v/jsreport.Shared.svg)](https://nuget.org/packages/jsreport.Shared) |
 |[jsreport.Binary](https://github.com/jsreport/jsreport-dotnet-binary) | [![Build status](https://ci.appveyor.com/api/projects/status/o2xkoca4gtloxayx?svg=true)](https://ci.appveyor.com/project/pofider/jsreport-dotnet-binary) | [![NuGet](https://img.shields.io/nuget/v/jsreport.Binary.svg)](https://nuget.org/packages/jsreport.Binary) |
+|[jsreport.MVC](https://github.com/jsreport/jsreport-dotnet-mvc) | [![Build status](https://ci.appveyor.com/api/projects/status/yubc0pf50u2o6o6a?svg=true)](https://ci.appveyor.com/project/pofider/jsreport-dotnet-mvc) | [![NuGet](https://img.shields.io/nuget/v/jsreport.MVC.svg)](https://nuget.org/packages/jsreport.MVC) |
 
 ## Development and contributions
 
