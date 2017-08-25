@@ -10,7 +10,7 @@ jsreport sdk for .net includes c# based rest client to the  reporting server as 
 |---|---|---|
 |[Console .net core](https://github.com/jsreport/jsreport-dotnet-example-consoleapp) | Example of integrating local jsreport into .net core console application |
 |[Web asp.net core](https://github.com/jsreport/jsreport-dotnet-example-webapp) | Example of integrating local jsreport into asp.net core mvc appliation |
-|[Web asp.net full](https://github.com/jsreport/jsreport-dotnet-example-webapp) | Example of integrating local jsreport into asp.net mvc application in full .net framework |
+|[Web asp.net full](https://github.com/jsreport/jsreport-dotnet-example-net-webapp) | Example of integrating local jsreport into asp.net mvc application in full .net framework |
 
 
 ## Repositories
