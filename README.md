@@ -41,10 +41,5 @@ You can follow these steps to startup your local environment:
 
 You can of course also open each individual repository separately, but this approach is probably the most convenient.
 
-## Roadmap
-
-1. Create demo screen cast
-2. Release linux and osx binary package
-
 ## License
 MIT
