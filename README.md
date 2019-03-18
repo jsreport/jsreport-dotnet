@@ -1,3 +1,4 @@
+
 # jsreport sdk for .NET
 
 **Pdf rendering, Excel rendering and other reporting features right in the .NET core using [jsreport](https://jsreport.net).**
@@ -30,6 +31,8 @@ The jsreport sdk for .NET consists of several repositories and nuget packages we
 |[jsreport.Types](https://github.com/jsreport/jsreport-dotnet-types) | [![Build status](https://ci.appveyor.com/api/projects/status/sx90dahobt3dhr2f?svg=true)](https://ci.appveyor.com/project/pofider/jsreport-dotnet-types) | [![NuGet](https://img.shields.io/nuget/v/jsreport.Types.svg)](https://nuget.org/packages/jsreport.Types) |
 |[jsreport.Shared](https://github.com/jsreport/jsreport-dotnet-shared) | [![Build status](https://ci.appveyor.com/api/projects/status/nl2evif6uho2y7ha?svg=true)](https://ci.appveyor.com/project/pofider/jsreport-dotnet-shared) | [![NuGet](https://img.shields.io/nuget/v/jsreport.Shared.svg)](https://nuget.org/packages/jsreport.Shared) |
 
+## Support
+We provide free community as well as commercial support. See the details [here](https://jsreport.net/buy/support).
 
 ## Development and contributions
 
