@@ -12,8 +12,8 @@ jsreport sdk for .net includes c# based rest client to the  reporting server as 
 |[Console .net core](https://github.com/jsreport/jsreport-dotnet-example-consoleapp) | Example of integrating local jsreport into .net core console application |
 |[Web asp.net core](https://github.com/jsreport/jsreport-dotnet-example-webapp) | Example of integrating local jsreport into asp.net core mvc appliation |
 |[Web asp.net full](https://github.com/jsreport/jsreport-dotnet-example-net-webapp) | Example of integrating local jsreport into asp.net mvc application in full .net framework |
-|[.net core, jsreport, dockercompose](https://github.com/jsreport/jsreport-dotnet-example-docker-compose) | Example of run jsreport in one container, .net core app in another container and orchestrate them using docker-compose |
-|[.net core, jsreport, docker](https://github.com/jsreport/jsreport-dotnet-example-docker) | Example of integrating local jsreport into asp.net core application running in single docker container |
+|[.net core jsreport dockercompose](https://github.com/jsreport/jsreport-dotnet-example-docker-compose) | Example of run jsreport in one container, .net core app in another container and orchestrate them using docker-compose |
+|[.net core jsreport docker](https://github.com/jsreport/jsreport-dotnet-example-docker) | Example of integrating local jsreport into asp.net core application running in single docker container |
 
 ## Repositories
 The jsreport sdk for .NET consists of several repositories and nuget packages were each has its specific location and purpose.
